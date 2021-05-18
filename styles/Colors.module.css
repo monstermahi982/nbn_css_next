@@ -1,0 +1,52 @@
+.bodys {
+    display: flex;
+}
+
+.blood {
+    background: red;
+    height: 100px;
+    width: 100%;
+    margin: 10px;
+}
+
+.tree {
+    background: rgba(107, 235, 23, 1);
+    height: 100px;
+    width: 100%;
+    margin: 10px;
+}
+
+.sun {
+    background: rgb(217, 238, 24);
+    height: 100px;
+    width: 100%;
+    margin: 10px;
+}
+
+.sky {
+    background: rgb(73, 222, 241);
+    height: 100px;
+    width: 100%;
+    margin: 10px;
+}
+
+.space {
+    background: rgb(0, 0, 0);
+    height: 100px;
+    width: 100%;
+    margin: 10px;
+}
+
+.moon {
+    background: rgb(233, 226, 226);
+    height: 100px;
+    width: 100%;
+    margin: 10px;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.8vw;
+    max-width: 50% 0;
+    color: whitesmoke;
+}
