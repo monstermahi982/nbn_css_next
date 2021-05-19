@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from '../../styles/Alert.module.css'
 
 const alerts = () => {
     return (
         <div>
-            <p>welcome to alert</p>
+            <h2 className={styles.text}>showing demo</h2>
         </div>
     )
 }
