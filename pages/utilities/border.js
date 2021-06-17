@@ -4,8 +4,8 @@ import styles from '../../styles/Border.module.css'
 const border = () => {
     return (
         <>
-            <h1 className="text-center">NBN border</h1>
-            <p className="text-center">Use NBN'css custom <strong>BORDERS</strong> in your PROJECT</p>
+            <h1 className={styles.title}>NBN border</h1>
+            <p className={styles.title}>Use NBN'css custom <strong>BORDERS</strong> in your PROJECT</p>
             <h4 className={styles.title}>1) Border Position</h4>
             <div className={styles.body}>
                 <div className={styles.box5}><p className={styles.text}>.NBN-border</p></div>
