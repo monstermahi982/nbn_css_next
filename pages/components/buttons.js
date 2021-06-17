@@ -35,12 +35,12 @@ const buttons = () => {
                 `
     }
     return (
-        <div className={styles.body}>
-            <h1 className={styles.text}>NBN BUTTONS</h1>
-            <p className={styles.text}>Use NBN'css custom BUTTONS in your PROJECT</p>
+        <div className="container">
+            <h1 className="text-center m-3 fw-bold">NBN BUTTONS</h1>
+            <p className="text-center">Use NBN'css custom BUTTONS in your PROJECT</p>
             <div>
-                <h3>Plain Button :- </h3>
-                <div className={styles.box}>
+                <h3 className="fw-bold">Plain Button :- </h3>
+                <div className="container border border-dark p-3">
                     <button className={styles.NBNSimpleButtonBlue}>SKY</button>
                     <button className={styles.NBNSimpleButtonYellow}>SUN</button>
                     <button className={styles.NBNSimpleButtonGreen}>TREE</button>
@@ -48,7 +48,7 @@ const buttons = () => {
                     <button className={styles.NBNSimpleButtonPink}>PINK</button>
                     <button className={styles.NBNSimpleButtonBlue}>SKY</button>
                 </div>
-                <div className={styles.editor}>
+                <div className="container m-4">
                     <CopyBlock
                         CodeBlock
                         language={lang}
@@ -60,8 +60,8 @@ const buttons = () => {
                 </div>
             </div>
             <div>
-                <h3>Outline Button :- </h3>
-                <div className={styles.box}>
+                <h3 className="fw-bold">Outline Button :- </h3>
+                <div className="container border border-dark p-3">
                     <button className={styles.nbnButtonBlue}>SKY</button>
                     <button className={styles.nbnButtonYellow}>SUN</button>
                     <button className={styles.nbnButtonGreen}>TREE</button>
@@ -69,7 +69,7 @@ const buttons = () => {
                     <button className={styles.nbnButtonPink}>PINK</button>
                     <button className={styles.nbnButtonBlue}>SKY</button>
                 </div>
-                <div className={styles.editor}>
+                <div className="container m-4">
                     <CopyBlock
                         CodeBlock
                         language={lang}
@@ -81,8 +81,8 @@ const buttons = () => {
                 </div>
             </div>
             <div>
-                <h3>Text Button :- </h3>
-                <div className={styles.box}>
+                <h3 className="fw-bold">Text Button :- </h3>
+                <div className="container border border-dark p-3">
                     <button className={styles.NBNTextButtontBlue}>SKY</button>
                     <button className={styles.NBNTextButtonYellow}>SUN</button>
                     <button className={styles.NBNTextButtonGreen}>TREE</button>
@@ -90,7 +90,7 @@ const buttons = () => {
                     <button className={styles.NBNTextButtonRedPink}>PINK</button>
                     <button className={styles.NBNTextButtontBlue}>SKY</button>
                 </div>
-                <div className={styles.editor}>
+                <div className="container m-4">
                     <CopyBlock
                         CodeBlock
                         language={lang}
@@ -102,8 +102,8 @@ const buttons = () => {
                 </div>
             </div>
             <div>
-                <h3>Linear Button :- </h3>
-                <div className={styles.box}>
+                <h3 className="fw-bold">Linear Button :- </h3>
+                <div className="container border border-dark p-3">
                     <button onClick={() => alert("hello monster")} className={styles.NBNLinearButtonBlue}>SKY</button>
                     <button className={styles.NBNLinearButtonYellow}>SUN</button>
                     <button className={styles.NBNLinearButtonGreen}>TREE</button>
@@ -111,7 +111,7 @@ const buttons = () => {
                     <button className={styles.NBNLinearButtonPink}>PINK</button>
                     <button className={styles.NBNLinearButtonBlue}>SKY</button>
                 </div>
-                <div className={styles.editor}>
+                <div className="container m-4">
                     <CopyBlock
                         CodeBlock
                         language={lang}
