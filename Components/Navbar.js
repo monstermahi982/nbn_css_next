@@ -30,7 +30,7 @@ const Navbar = () => {
                 <ul>
                     <li><Link href="/"><a>Getting Started</a></Link></li>
                     <li><a onClick={loutchange} className="util-btn">Layout
-                    <span className="fas fa-caret-down second"></span>
+                        <span className="fas fa-caret-down second"></span>
                     </a>
                         <ul className={lout ? "lout-show show1" : "lout-show"}>
                             <li><Link href="/conatiners"><a>Continers</a></Link></li>
@@ -39,7 +39,7 @@ const Navbar = () => {
                         </ul>
                     </li>
                     <li><a onClick={compchange} className="feat-btn">Components
-                    <span className="fas fa-caret-down first"></span>
+                        <span className="fas fa-caret-down first"></span>
                     </a>
                         <ul className={comp ? "comp-show show" : "comp-show"}>
                             <li><Link href="/components/alerts"><a>Alert</a></Link></li>
@@ -48,10 +48,10 @@ const Navbar = () => {
                         </ul>
                     </li>
                     <li><a onClick={utilchange} className="util-btn">Utilities
-                    <span className="fas fa-caret-down second"></span>
+                        <span className="fas fa-caret-down second"></span>
                     </a>
                         <ul className={util ? "util-show show1" : "util-show"}>
-                            <li><Link href="/utilities/borders"><a>Border</a></Link></li>
+                            <li><Link href="/utilities/border"><a>Border</a></Link></li>
                             <li><Link href="/utilities/colors"><a>Colors</a></Link></li>
                             <li><Link href="/utilities/background"><a>Background</a></Link></li>
                         </ul>
