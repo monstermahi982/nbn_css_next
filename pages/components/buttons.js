@@ -48,7 +48,7 @@ const buttons = () => {
                     <button className={styles.NBNSimpleButtonPink}>PINK</button>
                     <button className={styles.NBNSimpleButtonBlue}>SKY</button>
                 </div>
-                <div className={styles.editor}>
+                {/* <div className={styles.editor}>
                     <CopyBlock
                         CodeBlock
                         language={lang}
@@ -57,7 +57,10 @@ const buttons = () => {
                         theme={dracula}
                         wrapLines={false}
                     />
-                </div>
+                </div> */}
+                <pre>
+                    <code className="language-html">{sapmle.simpleButton}</code>
+                </pre>
             </div>
             <div>
                 <h3>Outline Button :- </h3>
@@ -69,16 +72,9 @@ const buttons = () => {
                     <button className={styles.nbnButtonPink}>PINK</button>
                     <button className={styles.nbnButtonBlue}>SKY</button>
                 </div>
-                <div className={styles.editor}>
-                    <CopyBlock
-                        CodeBlock
-                        language={lang}
-                        text={sapmle.outlieButton}
-                        showLineNumbers={false}
-                        theme={dracula}
-                        wrapLines={false}
-                    />
-                </div>
+                <pre>
+                    <code className="language-html">{sapmle.outlieButton}</code>
+                </pre>
             </div>
             <div>
                 <h3>Text Button :- </h3>
@@ -90,16 +86,9 @@ const buttons = () => {
                     <button className={styles.NBNTextButtonRedPink}>PINK</button>
                     <button className={styles.NBNTextButtontBlue}>SKY</button>
                 </div>
-                <div className={styles.editor}>
-                    <CopyBlock
-                        CodeBlock
-                        language={lang}
-                        text={sapmle.textButton}
-                        showLineNumbers={false}
-                        theme={dracula}
-                        wrapLines={false}
-                    />
-                </div>
+                <pre>
+                    <code className="language-html">{sapmle.textButton}</code>
+                </pre>
             </div>
             <div>
                 <h3>Linear Button :- </h3>
@@ -111,16 +100,9 @@ const buttons = () => {
                     <button className={styles.NBNLinearButtonPink}>PINK</button>
                     <button className={styles.NBNLinearButtonBlue}>SKY</button>
                 </div>
-                <div className={styles.editor}>
-                    <CopyBlock
-                        CodeBlock
-                        language={lang}
-                        text={sapmle.linearButton}
-                        showLineNumbers={false}
-                        theme={dracula}
-                        wrapLines={false}
-                    />
-                </div>
+                <pre>
+                    <code className="language-html">{sapmle.linearButton}</code>
+                </pre>
             </div>
         </div >
     )

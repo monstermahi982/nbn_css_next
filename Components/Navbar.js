@@ -51,9 +51,11 @@ const Navbar = () => {
                         <span className="fas fa-caret-down second"></span>
                     </a>
                         <ul className={util ? "util-show show1" : "util-show"}>
-                            <li><Link href="/utilities/border"><a>Border</a></Link></li>
+                            <li><Link href="/utilities/border"><a>Borders</a></Link></li>
                             <li><Link href="/utilities/colors"><a>Colors</a></Link></li>
-                            <li><Link href="/utilities/background"><a>Background</a></Link></li>
+                            <li><Link href="/utilities/background"><a>Backgrounds</a></Link></li>
+                            <li><Link href="/utilities/shadow"><a>Shadows</a></Link></li>
+                            <li><Link href="/utilities/text"><a>Texts</a></Link></li>
                         </ul>
                     </li>
                     <li><Link href="/about"><a>ABOUT</a></Link></li>

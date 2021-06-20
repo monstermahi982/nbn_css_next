@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from './Navbar'
 import Head from 'next/head'
+import Prism from "prismjs";
 import Footer from './Footers'
 
 const Layout = ({ children }) => {
+    useEffect(() => {
+        Prism.highlightAll();
+    }, []);
     return (
         <>
             <Head>

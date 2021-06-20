@@ -15,6 +15,7 @@
 .box {
     border: 1px solid black;
     padding: 10px;
+    /* position: relative; */
 }
 
 .nbnButtonBlue {
@@ -24,7 +25,7 @@
     color: blueviolet;
     border-radius: 5px;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .nbnButtonBlue:hover {
@@ -50,7 +51,7 @@
     color: yellow;
     border-radius: 5px;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .nbnButtonYellow:hover {
@@ -76,7 +77,7 @@
     color: green;
     border-radius: 5px;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .nbnButtonGreen:hover {
@@ -102,7 +103,7 @@
     color: red;
     border-radius: 5px;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .nbnButtonRed:hover {
@@ -128,7 +129,7 @@
     color: pink;
     border-radius: 5px;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .nbnButtonPink:hover {
@@ -156,7 +157,7 @@
     border-radius: 5px;
     color: white;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .NBNLinearButtonYellow {
@@ -166,7 +167,7 @@
     background-image: linear-gradient(to right, rgb(169, 187, 10), rgb(189, 211, 65), rgb(198, 214, 122));
     color: white;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .NBNLinearButtonGreen {
@@ -176,7 +177,7 @@
     background-image: linear-gradient(to right, rgb(12, 126, 27), rgb(47, 175, 30), rgb(114, 214, 83));
     color: white;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .NBNLinearButtonRed {
@@ -186,7 +187,7 @@
     background-image: linear-gradient(to right, rgb(136, 22, 14), rgb(187, 62, 40), rgb(220, 98, 98));
     color: white;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .NBNLinearButtonPink {
@@ -196,7 +197,7 @@
     background-image: linear-gradient(to right, rgb(124, 9, 99), rgb(158, 33, 131), rgb(189, 98, 174));
     color: white;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 /* trans-bgcolor-style-css */
@@ -207,7 +208,7 @@
     color: blueviolet;
     border: none;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .NBNTextButtontBlue:active {
@@ -229,7 +230,7 @@
     color: yellow;
     border: none;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .NBNTextButtonYellow:active {
@@ -251,7 +252,7 @@
     color: green;
     border: none;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .NBNTextButtonGreen:active {
@@ -273,7 +274,7 @@
     color: red;
     border: none;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .NBNTextButtonRed:active {
@@ -295,7 +296,7 @@
     color: pink;
     border: none;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .NBNTextButtonRedPink:active {
@@ -320,7 +321,7 @@
     padding: 10px;
     border: none;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .NBNSimpleButtonYellow {
@@ -330,7 +331,7 @@
     padding: 10px;
     border: none;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .NBNSimpleButtonGreen {
@@ -340,7 +341,7 @@
     padding: 10px;
     border: none;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .NBNSimpleButtonRed {
@@ -350,7 +351,7 @@
     padding: 10px;
     border: none;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .NBNSimpleButtonPink {
@@ -360,7 +361,7 @@
     padding: 10px;
     border: none;
     width: 150px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 /* ------------------------------------------------------- */
