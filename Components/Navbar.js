@@ -44,7 +44,7 @@ const Navbar = () => {
                         <ul className={comp ? "comp-show show" : "comp-show"}>
                             <li><Link href="/components/alerts"><a>Alert</a></Link></li>
                             <li><Link href="/components/buttons"><a>Buttons</a></Link></li>
-                            <li><Link href="/components/cards"><a>Card</a></Link></li>
+                            <li><Link href="/components/card"><a>Card</a></Link></li>
                         </ul>
                     </li>
                     <li><a onClick={utilchange} className="util-btn">Utilities

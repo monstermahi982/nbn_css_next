@@ -3,6 +3,8 @@ import Navbar from './Navbar'
 import Head from 'next/head'
 import Prism from "prismjs";
 import Footer from './Footers'
+import Image from 'next/image'
+
 
 const Layout = ({ children }) => {
     useEffect(() => {
