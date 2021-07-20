@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import styles from '../../styles/Button.module.css'
-import { CopyBlock, dracula, atomOneDark } from "react-code-blocks";
 
 const buttons = () => {
     const [lang, setLang] = useState("java")

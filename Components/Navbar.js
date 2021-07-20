@@ -21,7 +21,7 @@ const Navbar = () => {
     }
     return (
         <>
-            <button className="fas fa-bars" className={active ? "btn" : "btn clicks"} onClick={change}></button>
+            <button className="fas fa-bars" className={active ? "btn" : "btn clicks"} onClick={change}>&#9776;</button>
             {/* <div className="btn">
                 <span className="fas fa-bars"></span>
             </div> */}
@@ -34,7 +34,7 @@ const Navbar = () => {
                     </a>
                         <ul className={lout ? "lout-show show1" : "lout-show"}>
                             <li><Link href="/conatiners"><a>Continers</a></Link></li>
-                            <li><Link href="/grid"><a>Grid</a></Link></li>
+                            <li><Link href="/layout/grid"><a>Grid</a></Link></li>
                             <li><Link href="/columns"><a>Columns</a></Link></li>
                         </ul>
                     </li>
@@ -45,6 +45,9 @@ const Navbar = () => {
                             <li><Link href="/components/alerts"><a>Alert</a></Link></li>
                             <li><Link href="/components/buttons"><a>Buttons</a></Link></li>
                             <li><Link href="/components/card"><a>Card</a></Link></li>
+                            <li><Link href="/components/table"><a>Table</a></Link></li>
+                            <li><Link href="/components/list_group"><a>List Group</a></Link></li>
+                            <li><Link href="/components/sidebar"><a>Sidebar</a></Link></li>
                         </ul>
                     </li>
                     <li><a onClick={utilchange} className="util-btn">Utilities
