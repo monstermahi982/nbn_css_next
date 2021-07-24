@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import styles from '../../styles/Button.module.css'
 
 const buttons = () => {
-    const [lang, setLang] = useState("java")
     const sapmle = {
         simpleButton: `        
         <button type="button" class=" nbn-btn  nbn-btn-sky ">SKY</button>
@@ -34,10 +33,10 @@ const buttons = () => {
                 `
     }
     return (
-        <div className="container">
-            <h1 className="text-center m-3 fw-bold">NBN BUTTONS</h1>
-            <p className="text-center">Use NBN'css custom BUTTONS in your PROJECT</p>
-            <div>
+        <>
+            <h1 className={styles.text_main}>NBN BUTTONS</h1>
+            <p className={styles.text_main}>Use NBN'css custom BUTTONS in your PROJECT</p>
+            <div className={styles.container}>
                 <h3 className="fw-bold">Plain Button :- </h3>
                 <div className="container border border-dark p-3">
                     <button className={styles.NBNSimpleButtonBlue}>SKY</button>
@@ -47,25 +46,9 @@ const buttons = () => {
                     <button className={styles.NBNSimpleButtonPink}>PINK</button>
                     <button className={styles.NBNSimpleButtonBlue}>SKY</button>
                 </div>
-<<<<<<< HEAD
-                <div className="container m-4">
-=======
-                {/* <div className={styles.editor}>
->>>>>>> dev
-                    <CopyBlock
-                        CodeBlock
-                        language={lang}
-                        text={sapmle.simpleButton}
-                        showLineNumbers={false}
-                        theme={dracula}
-                        wrapLines={false}
-                    />
-                </div> */}
                 <pre>
                     <code className="language-html">{sapmle.simpleButton}</code>
                 </pre>
-            </div>
-            <div>
                 <h3 className="fw-bold">Outline Button :- </h3>
                 <div className="container border border-dark p-3">
                     <button className={styles.nbnButtonBlue}>SKY</button>
@@ -75,24 +58,9 @@ const buttons = () => {
                     <button className={styles.nbnButtonPink}>PINK</button>
                     <button className={styles.nbnButtonBlue}>SKY</button>
                 </div>
-<<<<<<< HEAD
-                <div className="container m-4">
-                    <CopyBlock
-                        CodeBlock
-                        language={lang}
-                        text={sapmle.outlieButton}
-                        showLineNumbers={false}
-                        theme={dracula}
-                        wrapLines={false}
-                    />
-                </div>
-=======
                 <pre>
                     <code className="language-html">{sapmle.outlieButton}</code>
                 </pre>
->>>>>>> dev
-            </div>
-            <div>
                 <h3 className="fw-bold">Text Button :- </h3>
                 <div className="container border border-dark p-3">
                     <button className={styles.NBNTextButtontBlue}>SKY</button>
@@ -102,24 +70,10 @@ const buttons = () => {
                     <button className={styles.NBNTextButtonRedPink}>PINK</button>
                     <button className={styles.NBNTextButtontBlue}>SKY</button>
                 </div>
-<<<<<<< HEAD
-                <div className="container m-4">
-                    <CopyBlock
-                        CodeBlock
-                        language={lang}
-                        text={sapmle.textButton}
-                        showLineNumbers={false}
-                        theme={dracula}
-                        wrapLines={false}
-                    />
-                </div>
-=======
                 <pre>
                     <code className="language-html">{sapmle.textButton}</code>
                 </pre>
->>>>>>> dev
-            </div>
-            <div>
+
                 <h3 className="fw-bold">Linear Button :- </h3>
                 <div className="container border border-dark p-3">
                     <button onClick={() => alert("hello monster")} className={styles.NBNLinearButtonBlue}>SKY</button>
@@ -129,24 +83,11 @@ const buttons = () => {
                     <button className={styles.NBNLinearButtonPink}>PINK</button>
                     <button className={styles.NBNLinearButtonBlue}>SKY</button>
                 </div>
-<<<<<<< HEAD
-                <div className="container m-4">
-                    <CopyBlock
-                        CodeBlock
-                        language={lang}
-                        text={sapmle.linearButton}
-                        showLineNumbers={false}
-                        theme={dracula}
-                        wrapLines={false}
-                    />
-                </div>
-=======
                 <pre>
                     <code className="language-html">{sapmle.linearButton}</code>
                 </pre>
->>>>>>> dev
             </div>
-        </div >
+        </>
     )
 }
 true
