@@ -1,0 +1,17 @@
+.text_main {
+    text-align: center;
+}
+
+.container {
+    margin: 0 50px;
+    padding: 10px;
+}
+
+.code {
+    margin: 0 50px;
+    /* border: 2px solid black; */
+}
+
+.heading {
+    margin: 10px 50px;
+}

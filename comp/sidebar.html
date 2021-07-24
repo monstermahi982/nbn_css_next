@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Left Sidebar</title>
+</head>
+
+<body>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .leftsidebar {
+      position: fixed;
+      min-height: 100vh;
+      width: 0px;
+      background-color: rgb(0, 0, 0);
+      overflow-x: hidden;
+      transition: 0.8s;
+    }
+
+    .leftsidebar .sidebar-item {
+      margin: 15px;
+      padding: 15px;
+    }
+
+    .leftsidebar .sidebar_items .sidebar-list {
+      list-style: none;
+      margin: 10px 0;
+    }
+
+    .leftsidebar .sidebar_items .sidebar-list:hover a {
+      text-align: center;
+      background-color: #f1f1f1;
+      color: #000;
+      transition: 0.9s;
+    }
+
+    .leftsidebar .sidebar_items .sidebar-list a {
+      color: #f1f1f1;
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 100%;
+      display: block;
+      transition: 0.5s;
+    }
+
+    .leftsidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    .rightsidebar {
+      position: fixed;
+      right: 0;
+      min-height: 100vh;
+      width: 0px;
+      background-color: rgb(0, 0, 0);
+      overflow-x: hidden;
+      transition: 0.8s;
+    }
+
+    .rightsidebar .sidebar-item {
+      margin: 15px;
+      padding: 15px;
+    }
+
+    .rightsidebar .sidebar_items .sidebar-list {
+      list-style: none;
+      margin: 10px 0;
+    }
+
+    .rightsidebar .sidebar_items .sidebar-list:hover a {
+      text-align: center;
+      background-color: #f1f1f1;
+      color: #000;
+      transition: 0.9s;
+    }
+
+    .rightsidebar .sidebar_items .sidebar-list a {
+      color: #f1f1f1;
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 100%;
+      display: block;
+      transition: 0.5s;
+    }
+
+    .rightsidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    .closebtn {
+      background: none;
+      color: white;
+      border: none;
+      font-size: 30px;
+      float: right;
+      padding: 10px;
+    }
+
+    .closebtn:hover {
+      text-shadow: -2px 4px 4px rgba(247, 246, 240, 0.8);
+    }
+
+
+    .menu {
+      font-size: 30px;
+    }
+
+    #main {
+      transition: margin-left 0.8s;
+    }
+  </style>
+  </head>
+
+  <body>
+
+    <div id="leftsidebar" class="leftsidebar">
+      <button class="closebtn" id="closebtn">&times;</button>
+      <div class="sidebar_items">
+        <ul class="sidebar-item">
+          <li class="sidebar-list"><a href="#">About</a></li>
+          <li class="sidebar-list"><a href="#">Products</a></li>
+          <li class="sidebar-list"><a href="#">Users</a></li>
+          <li class="sidebar-list"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="rightsidebar" class="rightsidebar">
+      <button class="closebtn" id="rightclosebtn">&times;</button>
+      <div class="sidebar_items">
+        <ul class="sidebar-item">
+          <li class="sidebar-list"><a href="#">About</a></li>
+          <li class="sidebar-list"><a href="#">Products</a></li>
+          <li class="sidebar-list"><a href="#">Users</a></li>
+          <li class="sidebar-list"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div id="main">
+      <button class="menu" id="leftSidebarbtn">&#9776; Left Sidebar</button>
+      <button class="menu" id="rightSidebarbtn">&#9776; right Sidebar</button>
+      <h1> NBNSSOE - Department of Computer Engineering Batch 2022 </h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi delectus tempora illum? Quidem
+        debitis
+        sit adipisci magni porro exercitationem consequatur earum provident ea rem alias perferendis saepe
+        pariatur
+        a magnam, autem cumque dolorem facilis enim quo illum accusantium voluptas necessitatibus. Minus rem
+        consectetur enim in? Cum tenetur repellat illo labore asperiores fuga est sit ipsam ducimus, eos veniam
+        fugit quas, soluta modi consectetur possimus recusandae maxime similique excepturi odio eligendi
+        provident
+        non! Fugiat deserunt, maxime dicta ut voluptas iste recusandae officia qui porro ipsa, quos mollitia
+        sunt
+        vitae ullam repellat! Consectetur, voluptate odio repellat facere quam magni tempora quibusdam.</p><br>
+      <button class="menu" id="staticleftsidebarbtn">&#9776; Left Sidebar</button>
+      <button class="menu" id="staticrightSidebarbtn">&#9776; right Sidebar</button>
+    </div>
+
+
+    <div id="staticleftsidebar" class="leftsidebar">
+      <button class="closebtn" id="staticleftclosebtn">&times;</button>
+      <div class="sidebar_items">
+        <ul class="sidebar-item">
+          <li class="sidebar-list"><a href="#">About</a></li>
+          <li class="sidebar-list"><a href="#">Products</a></li>
+          <li class="sidebar-list"><a href="#">Users</a></li>
+          <li class="sidebar-list"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="staticleftsidebar" class="leftsidebar">
+      <button class="closebtn" id="staticrightclosebtn">&times;</button>
+      <div class="sidebar_items">
+        <ul class="sidebar-item">
+          <li class="sidebar-list"><a href="#">About</a></li>
+          <li class="sidebar-list"><a href="#">Products</a></li>
+          <li class="sidebar-list"><a href="#">Users</a></li>
+          <li class="sidebar-list"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <script>
+
+      var sidbarbtn = document.getElementById('leftSidebarbtn')
+      var rightbarbtn = document.getElementById('rightSidebarbtn')
+      var sidebarclose = document.getElementById('closebtn')
+      var rightsidebarclose = document.getElementById('rightclosebtn')
+
+      var staticsidbarbtn = document.getElementById('staticleftsidebarbtn')
+      var staticrightbarbtn = document.getElementById('staticrightSidebarbtn')
+      var staticsidebarclose = document.getElementById('staticleftclosebtn')
+      var staticrightsidebarclose = document.getElementById('staticrightclosebtn')
+
+      staticsidbarbtn.addEventListener("click", () => {
+        document.getElementById("leftsidebar").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "200px";
+      })
+      staticrightbarbtn.addEventListener("click", () => {
+        document.getElementById("rightsidebar").style.width = "200px";
+        document.getElementById("main").style.marginRight = "200px";
+      })
+      staticsidebarclose.addEventListener("click", () => {
+        document.getElementById("leftsidebar").style.width = "0px";
+        document.getElementById("main").style.marginLeft = "-250pxpx";
+      })
+
+      staticrightsidebarclose.addEventListener("click", () => {
+        document.getElementById("rightsidebar").style.width = "0px";
+        document.getElementById("main").style.marginRight = "0px";
+      })
+
+
+
+      sidbarbtn.addEventListener("click", () => {
+        document.getElementById("leftsidebar").style.width = "200px";
+      })
+      rightbarbtn.addEventListener("click", () => {
+        document.getElementById("rightsidebar").style.width = "200px";
+      })
+      sidebarclose.addEventListener("click", () => {
+        document.getElementById("leftsidebar").style.width = "0px";
+      })
+
+      rightsidebarclose.addEventListener("click", () => {
+        document.getElementById("rightsidebar").style.width = "0px";
+      })
+    </script>
+  </body>
+
+</html>

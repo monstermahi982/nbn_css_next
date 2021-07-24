@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import styles from '../../styles/Button.module.css'
-import { CopyBlock, dracula, atomOneDark } from "react-code-blocks";
 
 const buttons = () => {
     const [lang, setLang] = useState("java")
@@ -48,7 +47,11 @@ const buttons = () => {
                     <button className={styles.NBNSimpleButtonPink}>PINK</button>
                     <button className={styles.NBNSimpleButtonBlue}>SKY</button>
                 </div>
+<<<<<<< HEAD
                 <div className="container m-4">
+=======
+                {/* <div className={styles.editor}>
+>>>>>>> dev
                     <CopyBlock
                         CodeBlock
                         language={lang}
@@ -57,7 +60,10 @@ const buttons = () => {
                         theme={dracula}
                         wrapLines={false}
                     />
-                </div>
+                </div> */}
+                <pre>
+                    <code className="language-html">{sapmle.simpleButton}</code>
+                </pre>
             </div>
             <div>
                 <h3 className="fw-bold">Outline Button :- </h3>
@@ -69,6 +75,7 @@ const buttons = () => {
                     <button className={styles.nbnButtonPink}>PINK</button>
                     <button className={styles.nbnButtonBlue}>SKY</button>
                 </div>
+<<<<<<< HEAD
                 <div className="container m-4">
                     <CopyBlock
                         CodeBlock
@@ -79,6 +86,11 @@ const buttons = () => {
                         wrapLines={false}
                     />
                 </div>
+=======
+                <pre>
+                    <code className="language-html">{sapmle.outlieButton}</code>
+                </pre>
+>>>>>>> dev
             </div>
             <div>
                 <h3 className="fw-bold">Text Button :- </h3>
@@ -90,6 +102,7 @@ const buttons = () => {
                     <button className={styles.NBNTextButtonRedPink}>PINK</button>
                     <button className={styles.NBNTextButtontBlue}>SKY</button>
                 </div>
+<<<<<<< HEAD
                 <div className="container m-4">
                     <CopyBlock
                         CodeBlock
@@ -100,6 +113,11 @@ const buttons = () => {
                         wrapLines={false}
                     />
                 </div>
+=======
+                <pre>
+                    <code className="language-html">{sapmle.textButton}</code>
+                </pre>
+>>>>>>> dev
             </div>
             <div>
                 <h3 className="fw-bold">Linear Button :- </h3>
@@ -111,6 +129,7 @@ const buttons = () => {
                     <button className={styles.NBNLinearButtonPink}>PINK</button>
                     <button className={styles.NBNLinearButtonBlue}>SKY</button>
                 </div>
+<<<<<<< HEAD
                 <div className="container m-4">
                     <CopyBlock
                         CodeBlock
@@ -121,6 +140,11 @@ const buttons = () => {
                         wrapLines={false}
                     />
                 </div>
+=======
+                <pre>
+                    <code className="language-html">{sapmle.linearButton}</code>
+                </pre>
+>>>>>>> dev
             </div>
         </div >
     )

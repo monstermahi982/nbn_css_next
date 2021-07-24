@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            background: transparent;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar div {
+            padding: 8% 8% 10% 30%;
+            font-size: 21px;
+            display: block;
+            transition: 0.54s;
+            cursor: pointer;
+            color: white;
+            background: transparent;
+
+
+        }
+
+        .sidebar div:hover {
+            color: black;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            background: transparent;
+
+        }
+
+        .openbtn {
+            font-size: 140%;
+            cursor: pointer;
+            background-color: rgb(46, 51, 46);
+            color: white;
+        }
+
+        #main {
+            transition: margin-left 0.8s;
+        }
+
+        body {
+            background-image: url("https://cdn.pixabay.com/photo/2021/06/10/19/03/sea-6326812_960_720.jpg");
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        p {
+            font-size: larger;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="css-side" class="sidebar">
+        <div class="closebtn" onclick="closeNav()">X</div>
+        <a href="#">
+            <div>About</div>
+        </a>
+        <a href="#">
+            <div>Services</div>
+        </a>
+        <a href="#">
+            <div>Clients</div>
+        </a>
+        <a href="#">
+            <div>Contact Us</div>
+        </a>
+        <a href="#">
+            <div>Want to Contribute ?</div>
+        </a>
+
+    </div>
+
+    <div id="main">
+        <h1 style="font-size: x-larger;">This is transperant Sidebar With Hover Effect</h1>
+        <button class="openbtn" onclick="openNav()">Click here</button>
+        <h1> NBNSSOE - Department of Computer Engineering Batch 2022 Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Eveniet doloribus consequuntur debitis facere! Consequuntur, neque veritatis corrupti id iure
+            corporis. Debitis, consectetur nisi? Atque autem exercitationem minima sint enim provident recusandae, alias
+            nisi dolor temporibus sapiente obcaecati. Fugiat nam molestias inventore ea vel sequi reprehenderit eius.
+            Nihil fuga porro blanditiis saepe, earum adipisci maiores voluptas omnis quidem consectetur nobis officiis.
+            Obcaecati eligendi temporibus provident eum placeat enim, eaque rerum voluptate iusto quis minima sequi ab
+            laudantium vero cum esse autem quasi consequuntur error impedit! A voluptates nostrum enim dolorum vel
+            distinctio ex numquam assumenda, officia neque error molestiae veniam aliquam ducimus quaerat. Odio quo
+            mollitia cum laudantium, dolores repellat iusto dolorem harum non dignissimos enim at cumque odit corporis
+            rerum exercitationem assumenda atque vel id velit minima fuga voluptatum? Incidunt enim quisquam laborum
+            distinctio cupiditate iste voluptatem eveniet aliquid adipisci? Eaque omnis provident expedita voluptatibus.
+            Aut quas architecto reprehenderit tempora sequi ad tenetur inventore omnis, unde error sapiente rem beatae
+            eveniet? Ad maiores voluptatem qui quidem, incidunt nisi culpa recusandae eum fuga deleniti quisquam animi,
+            enim quo rerum aliquid aspernatur porro eius rem. Iste placeat eos quam obcaecati iusto nobis quaerat quis
+            enim maxime vero adipisci, tempore eum? Minima facere hic quam optio impedit ipsum blanditiis doloribus
+            voluptatum voluptates. Temporibus beatae autem exercitationem odit nostrum consectetur tempora voluptas
+            velit vitae excepturi saepe labore laboriosam, incidunt voluptatibus, adipisci animi pariatur iusto, ipsam
+            voluptatem sint qui non? Soluta iste laboriosam architecto rerum, eum deleniti expedita, itaque debitis
+            perspiciatis veniam harum magni! Obcaecati repellat provident omnis illo dignissimos quia facere, adipisci
+            officiis ab id tempora similique aperiam. Enim repudiandae inventore eum maxime vitae possimus consequuntur
+            aliquam illum. Dignissimos ea accusamus commodi tenetur illum similique, rerum molestias, doloribus at
+            tempora distinctio labore quibusdam? Est accusantium vitae dolore laboriosam nam deserunt voluptas deleniti
+            soluta facere ullam! Aspernatur, harum adipisci! Ex cupiditate, illum, incidunt asperiores porro, vel esse
+            maiores deserunt ullam ratione mollitia libero magnam molestiae nisi unde odit voluptatum dolore totam
+            aspernatur aliquid repellat laborum. Atque animi et ratione. Dolorem cumque ea minima? Nostrum optio
+            aspernatur quasi in nam, inventore omnis maxime iste aperiam laborum eligendi nulla fuga consequatur
+            obcaecati a architecto, quis dicta ducimus! Distinctio expedita ex natus accusamus suscipit error eum
+            voluptas iste labore inventore atque et porro quam non, vel consectetur consequatur optio, aperiam quibusdam
+            iure excepturi quae fugit similique amet. Nobis dolore temporibus porro sit, repellat id recusandae culpa
+            provident esse.</h1>
+        <br>
+
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("css-side").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("css-side").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
+import styles from '../styles/navbar.module.css'
 
 
 const Navbar = () => {
     const [active, setActive] = useState(true)
-    const [comp, setComp] = useState(false);
-    const [util, setUtil] = useState(false);
-    const [lout, setLout] = useState(false);
+    const [comp, setComp] = useState(true);
+    const [util, setUtil] = useState(true);
+    const [lout, setLout] = useState(true);
     const change = () => {
         setActive(!active)
     }
@@ -21,42 +22,45 @@ const Navbar = () => {
     }
     return (
         <>
-            <button className="fas fa-bars" className={active ? "btn" : "btn clicks"} onClick={change}></button>
-            {/* <div className="btn">
-                <span className="fas fa-bars"></span>
-            </div> */}
-            <nav className="sidebar" className={active ? "sidebar" : "sidebar show"}>
-                <div className="text">NBN CSS</div>
-                <ul>
-                    <li><Link href="/"><a>Getting Started</a></Link></li>
-                    <li><a onClick={loutchange} className="util-btn">Layout
-                        <span className="fas fa-caret-down second"></span>
+            <button className={active ? styles.button : styles.button_click} onClick={change}>&#9776;</button>
+            <nav className={active ? styles.sidebar : styles.sidebar_show}>
+                <div className={styles.sidebar_text}>NBN CSS</div>
+                <ul className={styles.nav_ul}>
+                    <li className={styles.nav_ul_li}><Link href="/"><a className={styles.nav_ul_li_a}>Getting Started</a></Link></li>
+                    <li className={styles.nav_ul_li}><a className={styles.nav_ul_li_a} onClick={loutchange}>Layout
+                        <span className={styles.nav_ul_li_a_span}></span>
                     </a>
-                        <ul className={lout ? "lout-show show1" : "lout-show"}>
-                            <li><Link href="/conatiners"><a>Continers</a></Link></li>
-                            <li><Link href="/grid"><a>Grid</a></Link></li>
-                            <li><Link href="/columns"><a>Columns</a></Link></li>
+                        <ul className={styles.nav_ul_ul} className={lout ? styles.layout_show : styles.layout_show_click}>
+                            <li className={styles.nav_ul_ul_li}><Link href="/conatiners"><a className={styles.nav_ul_ul_li_a}>Continers</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/layout/grid"><a className={styles.nav_ul_ul_li_a}>Grid</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/columns"><a className={styles.nav_ul_ul_li_a}>Columns</a></Link></li>
                         </ul>
                     </li>
-                    <li><a onClick={compchange} className="feat-btn">Components
-                        <span className="fas fa-caret-down first"></span>
+                    <li className={styles.nav_ul_li}><a className={styles.nav_ul_li_a} onClick={compchange}>Components
+                        <span className={styles.nav_ul_li_a_span}></span>
                     </a>
-                        <ul className={comp ? "comp-show show" : "comp-show"}>
-                            <li><Link href="/components/alerts"><a>Alert</a></Link></li>
-                            <li><Link href="/components/buttons"><a>Buttons</a></Link></li>
-                            <li><Link href="/components/cards"><a>Card</a></Link></li>
+                        <ul className={styles.nav_ul_ul} className={comp ? styles.component_show : styles.component_show_click}>
+                            <li className={styles.nav_ul_ul_li}><Link href="/components/alerts"><a className={styles.nav_ul_ul_li_a}>Alert</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/components/buttons"><a className={styles.nav_ul_ul_li_a}>Buttons</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/components/card"><a className={styles.nav_ul_ul_li_a}>Card</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/components/table"><a className={styles.nav_ul_ul_li_a}>Table</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/components/list_group"><a className={styles.nav_ul_ul_li_a}>List Group</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/components/sidebar"><a className={styles.nav_ul_ul_li_a}>Sidebar</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/components/modal"><a className={styles.nav_ul_ul_li_a}>Modal</a></Link></li>
                         </ul>
                     </li>
-                    <li><a onClick={utilchange} className="util-btn">Utilities
-                        <span className="fas fa-caret-down second"></span>
+                    <li className={styles.nav_ul_li}><a className={styles.nav_ul_li_a} onClick={utilchange}>Utilities
+                        <span className={styles.nav_ul_li_a_span}></span>
                     </a>
-                        <ul className={util ? "util-show show1" : "util-show"}>
-                            <li><Link href="/utilities/border"><a>Border</a></Link></li>
-                            <li><Link href="/utilities/colors"><a>Colors</a></Link></li>
-                            <li><Link href="/utilities/background"><a>Background</a></Link></li>
+                        <ul className={styles.nav_ul_ul} className={util ? styles.utility_show : styles.utility_show_click}>
+                            <li className={styles.nav_ul_ul_li}><Link href="/utilities/border"><a className={styles.nav_ul_ul_li_a}>Borders</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/utilities/colors"><a className={styles.nav_ul_ul_li_a}>Colors</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/utilities/background"><a className={styles.nav_ul_ul_li_a}>Backgrounds</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/utilities/shadow"><a className={styles.nav_ul_ul_li_a}>Shadows</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/utilities/text"><a className={styles.nav_ul_ul_li_a}>Texts</a></Link></li>
                         </ul>
                     </li>
-                    <li><Link href="/about"><a>ABOUT</a></Link></li>
+                    <li className={styles.nav_ul_li}><Link href="/about"><a className={styles.nav_ul_li_a}>ABOUT</a></Link></li>
                 </ul>
             </nav>
 
