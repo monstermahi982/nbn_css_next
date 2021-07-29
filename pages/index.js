@@ -1,5 +1,5 @@
-// import styles from '../styles/Home.module.css'
-// className={styles.container}
+import styles from '../styles/index.module.css'
+
 
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <div>
-        <h2>home page</h2>
+        <h2 className={styles.heading}>Welcome to NBN CSS</h2>
       </div>
     </>
   )
