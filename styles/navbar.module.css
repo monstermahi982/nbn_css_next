@@ -96,6 +96,14 @@
     display: block;
 }
 
+.form_show {
+    display: none;
+}
+
+.form_show_click {
+    display: block;
+}
+
 .nav_ul_li {
     line-height: 60px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);

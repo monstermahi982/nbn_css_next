@@ -8,6 +8,7 @@ const Navbar = () => {
     const [comp, setComp] = useState(true);
     const [util, setUtil] = useState(true);
     const [lout, setLout] = useState(true);
+    const [form, setForm] = useState(true);
     const change = () => {
         setActive(!active)
     }
@@ -19,6 +20,9 @@ const Navbar = () => {
     }
     const loutchange = () => {
         setLout(!lout)
+    }
+    const formchange = () => {
+        setForm(!form)
     }
     return (
         <>
@@ -34,6 +38,18 @@ const Navbar = () => {
                             <li className={styles.nav_ul_ul_li}><Link href="/conatiners"><a className={styles.nav_ul_ul_li_a}>Continers</a></Link></li>
                             <li className={styles.nav_ul_ul_li}><Link href="/layout/grid"><a className={styles.nav_ul_ul_li_a}>Grid</a></Link></li>
                             <li className={styles.nav_ul_ul_li}><Link href="/columns"><a className={styles.nav_ul_ul_li_a}>Columns</a></Link></li>
+                        </ul>
+                    </li>
+                    <li className={styles.nav_ul_li}><a className={styles.nav_ul_li_a} onClick={formchange}>Forms
+                        <span className={styles.nav_ul_li_a_span}></span>
+                    </a>
+                        <ul className={styles.nav_ul_ul} className={form ? styles.form_show : styles.form_show_click}>
+                            <li className={styles.nav_ul_ul_li}><Link href="/form/input"><a className={styles.nav_ul_ul_li_a}>Input</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/form/textarea"><a className={styles.nav_ul_ul_li_a}>Textarea</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/form/select"><a className={styles.nav_ul_ul_li_a}>Select</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/form/radio"><a className={styles.nav_ul_ul_li_a}>Radio</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/form/check"><a className={styles.nav_ul_ul_li_a}>Check</a></Link></li>
+                            <li className={styles.nav_ul_ul_li}><Link href="/form/file"><a className={styles.nav_ul_ul_li_a}>File</a></Link></li>
                         </ul>
                     </li>
                     <li className={styles.nav_ul_li}><a className={styles.nav_ul_li_a} onClick={compchange}>Components
