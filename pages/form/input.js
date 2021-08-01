@@ -46,7 +46,7 @@ const input = () => {
                 <input type="text" className={styles.nbn_input} placeholder="This is normal input tag" />
                 <input type="text" className={styles.nbn_input_large} placeholder="This is large input tag" />
                 <input type="text" className={styles.nbn_input_rounded} placeholder="This is rounded input tag" />
-                <input type="text" className={styles.nbn_input_disabled} placeholder="This is disabled input tag" />
+                <input type="text" className={styles.nbn_input_disabled} placeholder="This is disabled input tag" disabled />
                 <div className={styles.code}>
                     <pre>
                         <code className="language-html">
