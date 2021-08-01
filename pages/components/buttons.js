@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import styles from '../../styles/Button.module.css'
 
 const buttons = () => {
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
     const sapmle = {
         simpleButton: `        
         <button type="button" class=" nbn-btn  nbn-btn-sky ">SKY</button>

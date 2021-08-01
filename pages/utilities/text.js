@@ -2,6 +2,9 @@ import React from 'react'
 import styles from '../../styles/text.module.css'
 
 const text = () => {
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
     const text_code = {
         text_color: `
         <h5 className="NBN-text-danger  text-center">Lorem ipsum dolor sit amet.</h5>

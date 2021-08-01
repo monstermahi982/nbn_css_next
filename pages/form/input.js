@@ -2,6 +2,9 @@ import React from 'react'
 import styles from '../../styles/form/input.module.css'
 
 const input = () => {
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
     const input_code = {
         color_input: `
         <input type="text" class = "nbn-input" placeholder="This is simple input tag" />

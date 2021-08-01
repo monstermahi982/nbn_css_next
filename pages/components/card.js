@@ -2,6 +2,9 @@ import React from 'react'
 import styles from '../../styles/component/card.module.css'
 
 const card = () => {
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
     const card_code = {
         simple_card: `
         <div class=" NBN_card " style= " width : 500px ">

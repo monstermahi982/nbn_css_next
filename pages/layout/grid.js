@@ -2,6 +2,9 @@ import React from 'react'
 import styles from '../../styles/layout/Grid.module.css'
 
 const grid = () => {
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
     const card_code = {
         simple_grid: `
         <div class =" nbn-container "}>

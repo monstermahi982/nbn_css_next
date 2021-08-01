@@ -3,6 +3,9 @@ import styles from '../../styles/shadow.module.css'
 
 
 const shadow = () => {
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
 
     const code = `
     <div class="NBN-shadow-sm"></div>

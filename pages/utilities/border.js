@@ -2,6 +2,9 @@ import React from 'react'
 import styles from '../../styles/Border.module.css'
 
 const border = () => {
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
     return (
         <>
             <h1 className="text-center">NBN border</h1>

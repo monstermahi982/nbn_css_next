@@ -9,6 +9,9 @@ const alerts = () => {
     const [alert_primary, setAlert_primary] = useState(true)
     const [alert_secondary, setAlert_secondary] = useState(true)
     const [alert_light, setAlert_light] = useState(true)
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
     const text = {
         simple_alert: `
         <div class =" NBN-alert-danger  ">This is alert component</div>

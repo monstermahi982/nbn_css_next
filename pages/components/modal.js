@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import styles from '../../styles/component/modal.module.css'
 
 const modal = () => {
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
     const [modal1, setModal1] = useState(true)
     const [modal2, setModal2] = useState(true)
     const [modal3, setModal3] = useState(true)

@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import styles from '../../styles/Colors.module.css'
 
 const colors = () => {
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
     return (
         <>
             <h1 className="text-center">NBN Colors</h1>

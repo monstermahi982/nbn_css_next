@@ -2,6 +2,9 @@ import React from 'react'
 import styles from '../../styles/component/list_group.module.css'
 
 const list_group = () => {
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
     return (
         <>
             <h1 className={styles.text_main}>NBN List Group</h1>

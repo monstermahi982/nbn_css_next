@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import styles from '../../styles/component/sidebar.module.css'
 
 const sidebar = () => {
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
     const [leftBar, setLeftBar] = useState(false)
     const [RightBar, setRightBar] = useState(false)
     const card_code = {

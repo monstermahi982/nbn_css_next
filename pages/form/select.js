@@ -2,6 +2,9 @@ import React from 'react'
 import styles from '../../styles/form/select.module.css'
 
 const select = () => {
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
     const select_code = {
         color_select: `
         <select class = " nbn-select ">

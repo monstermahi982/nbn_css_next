@@ -2,6 +2,9 @@ import React from 'react'
 import styles from '../../styles/component/table.module.css'
 
 const table = () => {
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
     return (
         <>
             <h1 className={styles.text_main}>NBN Tables</h1>
