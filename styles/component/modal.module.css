@@ -57,6 +57,8 @@
     width: 70%;
     border: 1px solid black;
     background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 6px 25px rgba(171, 169, 169, 1);
 }
 
 .simple_modal_content_animate {
@@ -109,7 +111,7 @@
 }
 
 .modal_closebtn {
-    color: blue;
+    color: black;
     float: right;
     font-size: 30px;
     border: 0;
@@ -117,7 +119,7 @@
 }
 
 .modal_closebtn:hover {
-    color: blue;
+    color: red;
     float: right;
     font-size: 30px;
     border: 0;
