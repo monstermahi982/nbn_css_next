@@ -29,15 +29,15 @@ const about = () => {
                             Kunal Gunjal
                         </div>
                         <div className={styles.image}>
-                            <img src="https://source.unsplash.com/1600x900/?nature,water" alt="" height="150" width="100%" />
+                            <img src="/user.jpg" alt="" height="150" width="100%" />
                         </div>
                         <div className={styles.social_link}>
                             <div className={styles.linkdin}>
-                                <a className={styles.linkdin_a} href="#" target="_blank"><i className="fab fa-linkedin"></i></a>
+                                <a className={styles.linkdin_a} href="https://www.linkedin.com/in/kunal-gunjal-3a23431ab" target="_blank"><i className="fab fa-linkedin"></i></a>
 
                             </div>
                             <div className={styles.github}>
-                                <a className={styles.github_a} href="#" target="_blank"><i className="fab fa-github"></i></a>
+                                <a className={styles.github_a} href="https://github.com/Kun0912" target="_blank"><i className="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -46,15 +46,15 @@ const about = () => {
                             Anshuli Kumari
                         </div>
                         <div className={styles.image}>
-                            <img src="https://source.unsplash.com/1600x900/?nature,water" alt="" height="150" width="100%" />
+                            <img src="/female_dummy.jpg" alt="" height="150" width="100%" />
                         </div>
                         <div className={styles.social_link}>
                             <div className={styles.linkdin}>
-                                <a className={styles.linkdin_a} href="#" target="_blank"><i className="fab fa-linkedin"></i></a>
+                                <a className={styles.linkdin_a} href="https://www.linkedin.com/in/anshuli-kumari-433743192" target="_blank"><i className="fab fa-linkedin"></i></a>
 
                             </div>
                             <div className={styles.github}>
-                                <a className={styles.github_a} href="#" target="_blank"><i className="fab fa-github"></i></a>
+                                <a className={styles.github_a} href="https://github.com/Anshuli21" target="_blank"><i className="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -63,15 +63,15 @@ const about = () => {
                             Divya Chaprwal
                         </div>
                         <div className={styles.image}>
-                            <img src="https://source.unsplash.com/1600x900/?nature,water" alt="" height="150" width="100%" />
+                            <img src="/female_dummy.jpg" alt="" height="150" width="100%" />
                         </div>
                         <div className={styles.social_link}>
                             <div className={styles.linkdin}>
-                                <a className={styles.linkdin_a} href="#" target="_blank"><i className="fab fa-linkedin"></i></a>
+                                <a className={styles.linkdin_a} href="https://www.linkedin.com/in/divya-chhaprwal-80888619b" target="_blank"><i className="fab fa-linkedin"></i></a>
 
                             </div>
                             <div className={styles.github}>
-                                <a className={styles.github_a} href="#" target="_blank"><i className="fab fa-github"></i></a>
+                                <a className={styles.github_a} href="https://github.com/Divya-ch11" target="_blank"><i className="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ const about = () => {
                             Digvijaysing Rajput
                         </div>
                         <div className={styles.image}>
-                            <img src="https://source.unsplash.com/1600x900/?nature,water" alt="" height="150" width="100%" />
+                            <img src="/user.jpg" alt="" height="150" width="100%" />
                         </div>
                         <div className={styles.social_link}>
                             <div className={styles.linkdin}>
@@ -97,7 +97,7 @@ const about = () => {
                             Swati Warade
                         </div>
                         <div className={styles.image}>
-                            <img src="https://source.unsplash.com/1600x900/?nature,water" alt="" height="150" width="100%" />
+                            <img src="/female_dummy.jpg" alt="" height="150" width="100%" />
                         </div>
                         <div className={styles.social_link}>
                             <div className={styles.linkdin}>
@@ -105,7 +105,7 @@ const about = () => {
 
                             </div>
                             <div className={styles.github}>
-                                <a className={styles.github_a} href="#" target="_blank"><i className="fab fa-github"></i></a>
+                                <a className={styles.github_a} href="https://github.com/swati-279" target="_blank"><i className="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -114,15 +114,15 @@ const about = () => {
                             Vaishnavi Gaikwad
                         </div>
                         <div className={styles.image}>
-                            <img src="https://source.unsplash.com/1600x900/?nature,water" alt="" height="150" width="100%" />
+                            <img src="/female_dummy.jpg" alt="" height="150" width="100%" />
                         </div>
                         <div className={styles.social_link}>
                             <div className={styles.linkdin}>
-                                <a className={styles.linkdin_a} href="#" target="_blank"><i className="fab fa-linkedin"></i></a>
+                                <a className={styles.linkdin_a} href="https://www.linkedin.com/in/vaishnavi-gaikwad-488523202" target="_blank"><i className="fab fa-linkedin"></i></a>
 
                             </div>
                             <div className={styles.github}>
-                                <a className={styles.github_a} href="#" target="_blank"><i className="fab fa-github"></i></a>
+                                <a className={styles.github_a} href="https://github.com/VaishnaviGaikwad123" target="_blank"><i className="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
