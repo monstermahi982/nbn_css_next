@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import styles from '../styles/navbar.module.css'
+import styles from '../styles/Navbar.module.css'
 
 
 const Navbar = () => {
@@ -26,7 +26,7 @@ const Navbar = () => {
     }
     return (
         <>
-            <button className={active ? styles.button : styles.button_click} onClick={change}>&#9776;</button>
+            <button className={active ? styles.button : styles.button_click} onClick={change}><i style={{ fontSize: 25 }} className="fas fa-bars"></i></button>
             <nav className={active ? styles.sidebar : styles.sidebar_show}>
                 <div className={styles.sidebar_text}>NBN CSS</div>
                 <ul className={styles.nav_ul}>
@@ -79,7 +79,6 @@ const Navbar = () => {
                     <li className={styles.nav_ul_li}><Link href="/about"><a className={styles.nav_ul_li_a}>ABOUT</a></Link></li>
                 </ul>
             </nav>
-
         </>
     )
 }
